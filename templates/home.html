@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #feedback{background: skyblue;}
+    </style>
+</head>
+<body>
+    
+    <form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.group_name.label}} {{form.group_name()}}
+    <br><br>
+    {{ form.debut_year.label}} {{form.debut_year()}}
+    <br>
+    {{ form.buy_album.label}} {{form.buy_album()}}
+    <br>
+    {{ form.service.label}} {{form.service()}}
+    <br><br>
+    <label for="feedback">하시고 싶은 말씀</label>
+    <br><br>
+    {{form.feedback(id="feedback")}}
+    {{ form.submit() }}
+    </form>
+    
+</body>
+</html>
+
+
+
+<!-- 그니까 지금 부트스트랩으로 form을 꾸며볼까 하는데 -->
+<!-- 저 폼을 만드려면 정확히 html로 어떻게 해야하고 -->
+<!-- css를 어떻게 해야되는지 알아보자. -->
+
+
+
